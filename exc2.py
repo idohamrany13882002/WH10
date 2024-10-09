@@ -27,10 +27,10 @@ except:
 l1: list[int] = [random.randint(1, 100) for _ in range(4)]
 print(f"l1: {l1}")  # to check
 while True:
-    num: int = int(input("enter a number: "))
-    if num == -999:
-        break
     try:
+        num: int = int(input("enter a number: "))
+        if num == -999:
+            break
         print (l1[num])
     except:
-        print (f" {num} is not an index in the list")
+        print (f" {num} is not an index in the list, or not a number")
