@@ -25,11 +25,11 @@ print(f"l5: {l5}")  # to check
 
 # exc g
 sen: str = input("enter a string: ")
-l7: list[str] = [x for x in sen if x != "t" and x != " "]
+l7: list[str] = [x for x in sen if x != ["t", " "]]
 print(f"l7: {l7}")
 
 # exc h
 l8: list[int] = [random.randint(10, 100) for _ in range(10)]
 print(f"l8: {l8}")
-l9: list[int] = [x // 10 for x in l8]
+l9: list[int] = [x % 10 for x in l8]
 print(f"l9: {l9}")
