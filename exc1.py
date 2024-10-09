@@ -25,7 +25,7 @@ print(f"l5: {l5}")  # to check
 
 # exc g
 sen: str = input("enter a string: ")
-l7: list[str] = [x for x in sen if x != ["t", " "]]
+l7: list[str] = [x for x in sen if x not in ["t", " "]]
 print(f"l7: {l7}")
 
 # exc h
